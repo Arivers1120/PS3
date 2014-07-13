@@ -21,7 +21,7 @@ public class CMain {
 			e.printStackTrace();
 		}
 
-		Person per = new Person("Bert", "Randall", "Gibbons", dBirthDate);
+		Person per = new Person("Bert", "Randall", "Gibbons", dBirthDate,"214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu");
 
 		per.PrintName();
 		
@@ -40,8 +40,7 @@ public class CMain {
 			e.printStackTrace();
 		}
 
-		Student stu = new Student("Bert", "Randall", "Gibbons", dBirthDate,
-				"MIS");
+		Student stu = new Student("Bert", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
 
 		stu.PrintName();
 		
