@@ -20,6 +20,11 @@ public class CMain {
 		Rectangle arect = new Rectangle(0, 0, 15, 15);
 		arect.setWidth(30);
 		arect.draw();
+		System.out.println(arect.ComputeArea());
+		
+		Circle cir = new Circle(0, 0, 22);
+		System.out.println(cir.ComputeArea());
+		
 	}
 
 }
