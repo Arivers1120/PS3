@@ -77,4 +77,7 @@ abstract class Shape {
 	 * This abstract method will compel any class that inherits this class to implement this method
 	 */
 	abstract void draw();
+	
+	
+	abstract public double ComputeArea();
 }

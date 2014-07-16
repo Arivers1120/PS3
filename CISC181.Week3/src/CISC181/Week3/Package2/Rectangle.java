@@ -33,4 +33,9 @@ public class Rectangle extends Shape  implements iShape {
 		System.out.println("Drawing a Rectangle at:(" + getX() + ", " + getY()
 				+ "), width " + getWidth() + ", height " + getHeight());
 	}
+
+	@Override
+	public double ComputeArea() {
+		return width * height;
+	}
 }
