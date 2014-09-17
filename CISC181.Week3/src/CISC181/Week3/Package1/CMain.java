@@ -14,6 +14,7 @@ public class CMain {
 	}
 
 	private static void CreatePersonInstance() {
+		/*
 		Date dBirthDate = null;
 		try {
 			dBirthDate = new SimpleDateFormat("yyyy-MM-dd").parse("1972-07-31");
@@ -29,7 +30,7 @@ public class CMain {
 		System.out.println(per instanceof Person);
 		System.out.print("Is per a instance of Student class? ");
 		System.out.println(per instanceof Student);
-
+*/
 	}
 
 	private static void CreateStudentInstance() {
@@ -43,6 +44,15 @@ public class CMain {
 		Student stu = new Student("Bert", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
 
 		stu.PrintName();
+		System.out.println(stu.NbrStudents);
+		
+		Student stu2 = new Student("Mike", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
+		System.out.println(stu.NbrStudents);
+		System.out.println(stu2.NbrStudents);
+		stu.PrintName();
+		stu2.PrintName();
+		
+		System.out.println(Student.ReturnFirstName(stu));
 		
 		System.out.print("Is stu a instance of Person class? ");
 		System.out.println(stu instanceof Person);
@@ -53,11 +63,12 @@ public class CMain {
 		Person per;
 		per = (Person) stu;
 
+		/*
 		System.out.print("Is per a instance of Person class? ");
 		System.out.println(per instanceof Person);
 		System.out.print("Is per a instance of Student class? ");
 		System.out.println(per instanceof Student);
-		
+		*/
 	}
 
 }

@@ -15,7 +15,8 @@ public class CMain {
 	          int a[] = new int[2];
 	          System.out.println("Access element three :" + a[3]);
 	       }catch(ArrayIndexOutOfBoundsException e){
-	          System.out.println("Exception thrown  :" + e);	          
+	          //System.out.println("Exception thrown  :" + e);	
+	    	   
 	       }
 	       System.out.println("Out of the block");
 	}
@@ -23,12 +24,15 @@ public class CMain {
 	
 	private static void HandleException2()
 	{
+		SubMethod();
+		
+		/*
 	      try{	          
 	    	  SubMethod();
 	       }catch(ArrayIndexOutOfBoundsException e){
 	          System.out.println("Exception thrown  :" + e);	          
 	       }
-
+*/
 		
 	}
 	
@@ -40,7 +44,7 @@ public class CMain {
 	          int a[] = new int[2];
 	          System.out.println("Access element three :" + a[3]);
 	       }catch(ArrayIndexOutOfBoundsException e){
-	          System.out.println("Exception thrown  :" + e);	          
+	          throw e;	          
 	       }
 	       System.out.println("Out of the block");
 	

@@ -79,5 +79,9 @@ abstract class Shape {
 	abstract void draw();
 	
 	
-	abstract public double ComputeArea();
+	public double ComputeArea()
+	{
+		return 0;	
+	}
+	
 }

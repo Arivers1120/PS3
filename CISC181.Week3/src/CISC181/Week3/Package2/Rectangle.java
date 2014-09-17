@@ -1,6 +1,6 @@
 package CISC181.Week3.Package2;
 
-public class Rectangle extends Shape  implements iShape {
+public class Rectangle extends Shape implements iShape {
 	private int width;
 	private int height;
 
@@ -34,8 +34,16 @@ public class Rectangle extends Shape  implements iShape {
 				+ "), width " + getWidth() + ", height " + getHeight());
 	}
 
-	@Override
-	public double ComputeArea() {
-		return width * height;
+	// @Override
+	public double COMPUTEAREA() {
+
+		int a = 1;
+
+		if (a == 1) {
+			return 0;
+		} else {
+			return 1;
+		}
+		// return width * height;
 	}
 }

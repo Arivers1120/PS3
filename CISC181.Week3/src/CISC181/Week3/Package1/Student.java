@@ -5,7 +5,7 @@ import java.util.Date;
 public class Student extends Person {
 
 	private String Major;
-	
+	public static int NbrStudents = 0;
 	public String getMajor ( )
     {
         return this.Major;
@@ -27,7 +27,12 @@ public class Student extends Person {
 	{
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number, Email);
 		this.Major = Major;
-		
+		NbrStudents += 1;
+	}
+	
+	public static String ReturnFirstName(Student MyStudent)
+	{
+		return MyStudent.getFirstName();
 	}
 
 }
